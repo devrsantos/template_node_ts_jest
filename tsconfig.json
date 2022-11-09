@@ -14,8 +14,12 @@
         "removeComments": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@config/*": ["./src/config/*"]
+        }
     },
-    "include": ["src"],
+    "include": ["src/**/*"],
     "exclude": ["./**/*.test.ts", "./src/mocks"]
 }
