@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Renan Augusto dos Santos <devrsantos@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
