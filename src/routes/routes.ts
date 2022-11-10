@@ -1,11 +1,9 @@
-import { Router } from "express";
+import { Request, Router, Response } from 'express'
 
-const routers = Router();
+const routers: Router = Router()
 
-routers.get("/", (request, response) => {
-    console.log("Olá");
-    
-    response.json({message: "Hello World"}).sendStatus(200);
-});
+routers.get('/', (request: Request, response: Response) => {
+  response.json({ message: 'Hello World' }).sendStatus(200)
+})
 
-export {routers}
+export { routers }

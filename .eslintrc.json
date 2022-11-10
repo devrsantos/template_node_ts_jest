@@ -8,11 +8,13 @@
     "overrides": [
     ],
     "parserOptions": {
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "ignorePatterns": ["babel.config.js"],
     "rules": {
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "@typescript-eslint/strict-boolean-expressions": "warn"
     }
 }
