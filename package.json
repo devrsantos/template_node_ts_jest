@@ -8,7 +8,8 @@
     "build": "rm -rf ./build && babel src --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
     "start": "node build/index.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "keywords": [],
   "author": "Renan Augusto dos Santos <devrsantos@gmail.com>",
