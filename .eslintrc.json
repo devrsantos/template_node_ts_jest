@@ -15,6 +15,6 @@
     "ignorePatterns": ["babel.config.js"],
     "rules": {
         "quotes": ["error", "single"],
-        "@typescript-eslint/strict-boolean-expressions": "warn"
+        "@typescript-eslint/strict-boolean-expressions": "off"
     }
 }
