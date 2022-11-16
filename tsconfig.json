@@ -21,5 +21,8 @@
         }
     },
     "include": ["src/**/*"],
-    "exclude": ["./**/*.test.ts", "./src/mocks"]
+    "exclude": ["./**/*.test.ts", "./src/mocks"],
+    "ts-node": {
+        "files": true
+    }
 }
