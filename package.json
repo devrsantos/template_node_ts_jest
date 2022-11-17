@@ -8,6 +8,8 @@
     "build": "rm -rf ./build && babel src --extensions \".js,.ts\" --out-dir build --copy-files --no-copy-ignored",
     "start": "node build/index.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/index.ts",
+    "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
+    "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
     "test": "jest",
     "test:staged": "jest"
   },
